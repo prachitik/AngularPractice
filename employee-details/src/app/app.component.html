@@ -1,0 +1,16 @@
+<div>
+  <h2> {{getFullName()}}</h2>
+    <h1>
+        {{pageHeader}}
+    </h1>
+    <img src='{{imagePath}}'/>
+    <my-employee></my-employee>
+    <button [disabled] = 'isDisabled'>Prop binding</button>  <!-- property binding -->
+    <button disabled='{{isDisabled}}'>Interpolation</button>
+    <!-- Data flows from HTML element to a component -->
+    <div>
+        <button (click)= 'onClick()'>Click Me</button>
+        <!-- Canonical form - Alternative syntax for event binding -->
+        <button on-click= 'onClick()'>Click Me</button>
+    </div>
+</div>
